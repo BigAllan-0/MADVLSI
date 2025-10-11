@@ -1,0 +1,72 @@
+magic
+tech sky130A
+timestamp 1760150810
+<< nwell >>
+rect -345 755 -330 895
+rect 1365 850 1370 895
+rect 1365 535 1370 560
+<< locali >>
+rect -575 895 -310 915
+rect -570 565 -550 895
+rect 1365 850 1370 895
+rect -370 565 -345 585
+rect -365 560 -345 565
+rect -365 540 -310 560
+rect -525 530 -485 540
+rect 1365 535 1370 560
+rect -525 510 -515 530
+rect -495 510 -485 530
+rect -525 345 -485 510
+rect -525 325 -515 345
+rect -495 325 -485 345
+rect -525 315 -485 325
+<< viali >>
+rect -515 510 -495 530
+rect -515 325 -495 345
+<< metal1 >>
+rect -575 775 -525 870
+rect -345 780 -330 870
+rect -525 530 -485 715
+rect -525 510 -515 530
+rect -495 510 -485 530
+rect -525 500 -485 510
+rect -575 380 -330 440
+rect -525 345 -485 355
+rect -525 325 -515 345
+rect -495 325 -485 345
+rect -525 150 -485 325
+rect -575 55 -330 150
+use FF  FF_0
+timestamp 1760147834
+transform 1 0 -235 0 1 370
+box -95 -330 330 610
+use FF  FF_1
+timestamp 1760147834
+transform 1 0 190 0 1 370
+box -95 -330 330 610
+use FF  FF_2
+timestamp 1760147834
+transform 1 0 615 0 1 370
+box -95 -330 330 610
+use FF  FF_3
+timestamp 1760147834
+transform 1 0 1040 0 1 370
+box -95 -330 330 610
+use inverter  inverter_0 ~/Documents/MADVLSI_Projects/MADVLSI_MP1
+timestamp 1758596537
+transform 1 0 -355 0 1 560
+box -195 5 10 335
+<< labels >>
+rlabel locali -575 905 -575 905 7 D
+port 1 w
+rlabel metal1 -575 410 -575 410 7 clk
+port 2 w
+rlabel metal1 -575 100 -575 100 7 VN
+port 3 w
+rlabel locali 1370 545 1370 545 3 QBar
+port 5 e
+rlabel locali 1370 885 1370 885 3 Q
+port 6 e
+rlabel metal1 -575 825 -575 825 7 VP
+port 4 w
+<< end >>

@@ -1,0 +1,37 @@
+* SPICE3 file created from ShiftReg.ext - technology: sky130A
+
+.subckt inverter VP A Y VN
+X0 Y A VN VN sky130_fd_pr__nfet_01v8 ad=0.5 pd=3 as=0.5 ps=3 w=1 l=0.15
+X1 Y A VP VP sky130_fd_pr__pfet_01v8 ad=0.5 pd=3 as=0.5 ps=3 w=1 l=0.15
+.ends
+
+.subckt FF VP D Q QBar DBar clk VN
+X0 Q clk a_10_810# VN sky130_fd_pr__nfet_01v8 ad=0.3125 pd=2.05 as=0.3125 ps=2.05 w=1.1 l=0.15
+X1 VN Q Qbar VN sky130_fd_pr__nfet_01v8 ad=0.225 pd=1.9 as=0.30625 ps=2 w=0.5 l=0.15
+X2 a_10_810# a_10_180# a_10_n630# VN sky130_fd_pr__nfet_01v8 ad=0.3125 pd=2.05 as=0.1125 ps=0.95 w=0.5 l=0.15
+X3 a_10_810# clk D VP sky130_fd_pr__pfet_01v8 ad=0.44625 pd=1.9 as=0.525 ps=3.1 w=1.05 l=0.15
+X4 a_10_180# clk Dbar VP sky130_fd_pr__pfet_01v8 ad=0.44625 pd=1.9 as=0.525 ps=3.1 w=1.05 l=0.15
+X5 a_10_180# a_10_810# a_10_n630# VN sky130_fd_pr__nfet_01v8 ad=0.30625 pd=2 as=0.1125 ps=0.95 w=0.5 l=0.15
+X6 Q Qbar a_350_180# VP sky130_fd_pr__pfet_01v8 ad=0.4725 pd=3 as=0.2625 ps=1.55 w=1.05 l=0.15
+X7 Qbar Q a_350_180# VP sky130_fd_pr__pfet_01v8 ad=0.4725 pd=3 as=0.2625 ps=1.55 w=1.05 l=0.15
+X8 a_10_n630# clk VN VN sky130_fd_pr__nfet_01v8 ad=0.1125 pd=0.95 as=0.25 ps=2 w=0.5 l=0.15
+X9 a_350_180# clk VP VP sky130_fd_pr__pfet_01v8 ad=0.2625 pd=1.55 as=0.28875 ps=1.6 w=1.05 l=0.15
+X10 a_350_180# clk VP VP sky130_fd_pr__pfet_01v8 ad=0.2625 pd=1.55 as=0.28875 ps=1.6 w=1.05 l=0.15
+X11 Qbar clk a_10_180# VN sky130_fd_pr__nfet_01v8 ad=0.30625 pd=2 as=0.30625 ps=2 w=1.05 l=0.15
+X12 VP a_10_180# a_10_810# VP sky130_fd_pr__pfet_01v8 ad=0.28875 pd=1.6 as=0.44625 ps=1.9 w=1.05 l=0.15
+X13 VP a_10_810# a_10_180# VP sky130_fd_pr__pfet_01v8 ad=0.28875 pd=1.6 as=0.44625 ps=1.9 w=1.05 l=0.15
+X14 a_10_n630# clk VN VN sky130_fd_pr__nfet_01v8 ad=0.1125 pd=0.95 as=0.25 ps=2 w=0.5 l=0.15
+X15 VN Qbar Q VN sky130_fd_pr__nfet_01v8 ad=0.225 pd=1.9 as=0.3125 ps=2.05 w=0.5 l=0.15
+* C0 VP VN 2.61367f
+.ends
+
+* .subckt ShiftReg D clk VN QBar Q
+Xinverter_0 VN D FF_0/Dbar VN inverter
+XFF_0 VN D FF_1/D FF_1/Dbar FF_0/Dbar clk VN FF
+XFF_1 VN FF_1/D FF_2/D FF_2/Dbar FF_1/Dbar clk VN FF
+XFF_2 VN FF_2/D FF_3/D FF_3/Dbar FF_2/Dbar clk VN FF
+XFF_3 VN FF_3/D Q QBar FF_3/Dbar clk VN FF
+* C0 VN 0 10.09151f
+* C1 clk 0 3.8192f
+*.ends
+

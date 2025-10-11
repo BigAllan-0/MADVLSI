@@ -1,0 +1,8 @@
+magic
+tech sky130A
+timestamp 1760144568
+use ShiftReg  ShiftReg_0
+timestamp 1760144183
+transform 1 0 568 0 1 -32
+box -575 40 1370 980
+<< end >>
