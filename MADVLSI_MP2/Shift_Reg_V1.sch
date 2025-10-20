@@ -72,7 +72,11 @@ C {lab_pin.sym} 210 -140 1 0 {name=p7 sig_type=std_logic lab=A1}
 C {lab_pin.sym} 430 -140 1 0 {name=p8 sig_type=std_logic lab=A2}
 C {lab_pin.sym} 650 -140 1 0 {name=p9 sig_type=std_logic lab=A3}
 C {sky130_fd_pr/corner.sym} -610 -380 0 0 {name=CORNER only_toplevel=false corner=SF}
-C {Sil_CSRL_4_Pin.sym} -160 -20 0 0 {name=x1}
-C {Sil_CSRL_4_Pin.sym} 60 -20 0 0 {name=x2}
-C {Sil_CSRL_4_Pin.sym} 280 -20 0 0 {name=x3}
-C {Sil_CSRL_4_Pin.sym} 500 -20 0 0 {name=x4}
+C {Sil_CSRL_4_Pin.sym} -100 -510 0 0 {name=x1}
+C {Sil_CSRL_4_Pin.sym} 120 -510 0 0 {name=x2}
+C {Sil_CSRL_4_Pin.sym} 340 -510 0 0 {name=x3}
+C {Sil_CSRL_4_Pin.sym} 560 -510 0 0 {name=x4}
+C {/home/allan/Documents/MADVLSI_Projects/MADVLSI_MP2/Lay_CSRL_4_Pin.sym} -160 -20 0 0 {name=x6}
+C {/home/allan/Documents/MADVLSI_Projects/MADVLSI_MP2/Lay_CSRL_4_Pin.sym} 60 -20 0 0 {name=x7}
+C {/home/allan/Documents/MADVLSI_Projects/MADVLSI_MP2/Lay_CSRL_4_Pin.sym} 280 -20 0 0 {name=x8}
+C {/home/allan/Documents/MADVLSI_Projects/MADVLSI_MP2/Lay_CSRL_4_Pin.sym} 500 -20 0 0 {name=x9}
